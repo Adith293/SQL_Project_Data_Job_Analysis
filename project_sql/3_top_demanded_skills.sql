@@ -1,4 +1,3 @@
-
 SELECT
     skills_dim.skills,
     COUNT (skills_job_dim.job_id) AS jobs_demand
@@ -15,4 +14,4 @@ GROUP BY
     skills_dim.skills
 ORDER BY
     jobs_demand DESC
-LIMIT 5
+LIMIT 5;
